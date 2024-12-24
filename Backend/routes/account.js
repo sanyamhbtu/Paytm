@@ -1,7 +1,7 @@
 const express = require("express")
 const { authMiddleware } = require("./middleware")
 const mongoose = require("mongoose");
-const {Account} = require('../db')
+const {Account} = require('../config/db')
 const router = express.Router()
 
 router.post("/balance", async (req, res) => {
